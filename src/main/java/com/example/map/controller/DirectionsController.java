@@ -19,4 +19,5 @@ public class DirectionsController {
     public ResponseEntity<?> searchDirections(@RequestBody DirectionsRequestDTO request) {
         return ResponseEntity.ok(directionsService.searchDirections(request));
     }
+
 }
