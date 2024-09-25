@@ -3,8 +3,6 @@ package com.example.map.oauth2;
 
 import com.example.map.dto.CustomOAuth2User;
 import com.example.map.jwt.JWTUtil;
-import com.example.oauthjwt.dto.CustomOAuth2User;
-import com.example.oauthjwt.jwt.JWTUtil;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;

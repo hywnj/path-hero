@@ -1,8 +1,6 @@
 package com.example.map.controller;
 import com.example.map.entity.UserEntity;
 import com.example.map.repository.UserRepository;
-import com.example.oauthjwt.entity.UserEntity;
-import com.example.oauthjwt.repository.UserRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

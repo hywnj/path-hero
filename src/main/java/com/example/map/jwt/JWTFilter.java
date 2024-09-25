@@ -4,8 +4,6 @@ package com.example.map.jwt;
 
 import com.example.map.dto.CustomOAuth2User;
 import com.example.map.dto.UserDTO;
-import com.example.oauthjwt.dto.CustomOAuth2User;
-import com.example.oauthjwt.dto.UserDTO;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.Cookie;
