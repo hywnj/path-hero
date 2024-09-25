@@ -47,7 +47,7 @@ public class CustomSuccessHandler extends SimpleUrlAuthenticationSuccessHandler 
         response.addCookie(createCookie("Authorization", accessToken)); // 액세스 토큰 저장 (쿠키 방식으로 전달)
         response.addCookie(createCookie("RefreshToken", refreshToken)); // 리프레시 토큰 저장
 
-        response.sendRedirect("http://localhost:5173/success"); // 프론트측 특정 url에 리다이렉팅
+        response.sendRedirect("http://localhost:5173/main"); // 프론트측 특정 url에 리다이렉팅
     }
 
     private Cookie createCookie(String key, String value) { // 쿠키 만들기
@@ -56,7 +56,7 @@ public class CustomSuccessHandler extends SimpleUrlAuthenticationSuccessHandler 
         cookie.setMaxAge(60*60*60); // 쿠키 살아있는 시간
         //cookie.setSecure(true); // http 통신에서만 사용
         cookie.setPath("/");
-        cookie.setHttpOnly(true); // js가 해당 쿠키를 가져가지 못하게 설정
+        cookie.setHttpOnly(false); // js가 해당 쿠키를 가져가지 못하게 설정
         return cookie;
     }
 }

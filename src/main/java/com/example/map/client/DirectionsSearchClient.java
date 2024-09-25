@@ -50,7 +50,9 @@ public class DirectionsSearchClient {
 
         // 응답 본문이 null인 경우를 처리
         if (result.getBody() == null) {
-            throw new MapException("길찾기 결과가 없습니다.");
+            // throw new MapException("길찾기 결과가 없습니다.");
+            // @TODO 에러 처리
+            return null;
         }
 
         log.info("API 응답 결과: {}", result.getBody());

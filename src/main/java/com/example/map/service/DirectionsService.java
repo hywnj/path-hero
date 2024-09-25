@@ -23,8 +23,9 @@ public class DirectionsService {
         if (requestDTO.getMapX() == 0 || requestDTO.getMapY() == 0
                 || requestDTO.getStartX() == 0 || requestDTO.getStartY() == 0
                 || requestDTO.getEndX() == 0 || requestDTO.getEndY() == 0) {
-
-            throw new MapException("위치 정보를 모두 입력해주세요.");
+            // @TODO 에러 처리
+            return null;
+            // throw new MapException("위치 정보를 모두 입력해주세요.");
         }
 
         double startX = requestDTO.getStartX();
