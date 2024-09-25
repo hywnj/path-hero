@@ -18,4 +18,6 @@ public class DirectionsRequestDTO {
     // private String option; // 경로검색결과 정렬방식 (0: 추천경로, 1 타입별정렬)
     // private String searchType; // 0: 도시내 이동, 1: 도시간 이동
     // private String searchPathType; // 도시 내 경로수단 (0:모두(default), 1:지하철, 2:버스)
+
+    private int choice;
 }

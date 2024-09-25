@@ -1,6 +1,7 @@
 package com.example.map.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -18,6 +19,6 @@ public class DirectionsResponseDTO {
     private int subwayCount; // 지하철 결과 개수
     private int subwayBusCount; // “버스+지하철” 결과 개수
     private double pointDistance; // 출발지(SX, SY)와 도착지(EX, EY)의 직선 거리 (미터)
-
+    @JsonProperty("path")
     private List<PathDTO> path; // 경로 리스트
 }

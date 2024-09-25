@@ -1,14 +1,12 @@
 package com.example.map.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import lombok.AllArgsConstructor;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true) // JSON 데이터에서 DTO에 정의되지 않은 필드는 무시
+@JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class LaneDTO {
     private int subwayCode; // 지하철 노선 번호
     private String name; // 지하철 노선명
