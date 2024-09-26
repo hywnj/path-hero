@@ -17,9 +17,13 @@ _추가되었으면 하는 기능이나 의견, 언제든지 주세요!_ <br/>
 ## 🛠️ 기술 스택 
 - **Frontend**: React.js, Typescript
 - **Backend**: Spring Boot
-- **Database**: MySQL
-- **API 연동**: ODsay API, NaverSearch API
+- **Database**: MariaDB
+- **API 연동**: ODsay API, NaverSearch API, Google Login/Sing-in API, Naver Login API
 - **Version Control**: Git
+
+
+## 👥 Collaborator
+이 프로젝트는 [Han Ji Yun](https://github.com/Koreanpaper)와 함께 작업하였습니다 
 
 
 ## 🔗 Path HERO Client Repository 바로가기
